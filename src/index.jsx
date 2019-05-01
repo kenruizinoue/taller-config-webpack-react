@@ -1,8 +1,16 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-console.log("hola");
+import CardComponent from './CardComponent/CardComponent';
 
-ReactDOM.render(<h1>hola mundo!</h1>, document.getElementById("app"));
+console.log('hola');
+
+ReactDOM.render(
+  <div>
+    <CardComponent />
+    <h1>hola mundo!</h1>
+  </div>,
+  document.getElementById('app'),
+);
 
 module.hot.accept();
