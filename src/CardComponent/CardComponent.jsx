@@ -2,6 +2,10 @@ import React from 'react';
 
 import './CardComponent.pcss';
 
+import comment from './comment.svg';
+import favorite from './favorite.svg';
+import share from './share.svg';
+
 // class CardComponent extends React.Component {
 //   render() {
 //     return <div>Card</div>;
@@ -18,9 +22,9 @@ const CardComponent = () => (
       </div>
     </div>
     <div styleName="button-box">
-      <img src="" alt="" />
-      <img src="" alt="" />
-      <img src="" alt="" />
+      <img src={comment} alt="comment" />
+      <img src={favorite} alt="favorite" />
+      <img src={share} alt="share" />
     </div>
   </div>
 );
