@@ -9,15 +9,15 @@ import './CardComponent.pcss';
 // }
 
 const CardComponent = () => (
-  <div className="card">
-    <div className="cover">
-      <div className="label">DESARROLLO</div>
-      <div className="text-box">
+  <div styleName="card">
+    <div styleName="cover">
+      <div styleName="label">DESARROLLO</div>
+      <div styleName="text-box">
         <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque so</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque so</p>
       </div>
     </div>
-    <div className="button-box">
+    <div styleName="button-box">
       <img src="" alt="" />
       <img src="" alt="" />
       <img src="" alt="" />
