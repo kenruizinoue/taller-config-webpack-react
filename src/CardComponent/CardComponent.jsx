@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './CardComponent.css';
+import './CardComponent.pcss';
 
 // class CardComponent extends React.Component {
 //   render() {
@@ -13,8 +13,8 @@ const CardComponent = () => (
     <div className="cover">
       <div className="label">DESARROLLO</div>
       <div className="text-box">
-        <h1>ofhwiw</h1>
-        <p>jwifjwifiwfje</p>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque so</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque so</p>
       </div>
     </div>
     <div className="button-box">
