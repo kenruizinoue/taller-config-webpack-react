@@ -1,6 +1,7 @@
 const path = require('path');
 const Dotenv = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   plugins: [
@@ -8,6 +9,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
+    new MiniCssExtractPlugin(),
   ],
   entry: path.resolve(__dirname, 'src/index.jsx'),
   resolve: {
@@ -23,7 +25,9 @@ module.exports = {
       {
         test: /\.pcss$/,
         use: [
-          'style-loader',
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
           {
             loader: 'css-loader',
             options: {
@@ -36,7 +40,14 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|svg)$/,
-        use: ['url-loader'],
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 100000,
+            fallback: 'file-loader',
+            name: 'images/[name].[hash].[ext]',
+          },
+        },
       },
     ],
   },

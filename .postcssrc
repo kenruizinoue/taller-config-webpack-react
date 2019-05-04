@@ -3,6 +3,9 @@
     "postcss-preset-env": {
       "browsers": "cover 99.5%",
       "stage": 0
+    },
+    "cssnano": {
+      "preset": "default"
     }
   }
 }
